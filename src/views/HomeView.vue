@@ -1,7 +1,5 @@
 <template>
   <div>
-    <NavBar />
-
     <section class="hero">
       <h1>Your own Market</h1>
       <p>ةarketplace</p>
@@ -9,17 +7,11 @@
     </section>
     <DescHero />
     <MyList />
-    <FooterSec />
-    <!-- <h2>بيانات من الـ API:</h2>
-    <pre>{{ dataFromApi }}</pre> -->
   </div>
 </template>
 
 <script>
 import MyList from "@/components/MyList.vue";
-import NavBar from "..//components/NavBar.vue";
-// import MyList from "@/components/MyList.vue";
-import FooterSec from "@/components/FooterSec.vue";
 import DescHero from "@/components/DescHero.vue";
 import axios from "axios";
 
@@ -30,9 +22,7 @@ export default {
     };
   },
   components: {
-    NavBar,
     MyList,
-    FooterSec,
     DescHero,
   },
   async created() {

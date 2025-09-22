@@ -1,5 +1,4 @@
 <template>
-  <NavBar />
   <div class="login-container">
     <form class="login-box" @submit.prevent="handleLogin">
       <h2>Welcome back</h2>
@@ -19,15 +18,12 @@
       <button type="submit">Sign In</button>
     </form>
   </div>
-  <FooterSec />
 </template>
 
 <script setup>
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 import axios from "axios";
-import NavBar from "@/components/NavBar.vue";
-import FooterSec from "@/components/FooterSec.vue";
 
 const router = useRouter();
 const email = ref("");
